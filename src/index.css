@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-/* Custom utility for the signature pad crosshair */
+@source "../src"; 
+
 @utility cursor-crosshair {
   cursor: crosshair;
 }
