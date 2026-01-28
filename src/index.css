@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+/* Custom utility for the signature pad crosshair */
+@utility cursor-crosshair {
+  cursor: crosshair;
+}
+
+/* Print Styles optimized for the SOW Portal */
+@media print {
+  @page {
+    margin: 20mm;
+    size: auto;
+  }
+  body {
+    background-color: white;
+    padding: 0;
+  }
+  input, textarea {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  .print\:hidden { display: none !important; }
+  .print\:border-none { border: none !important; }
+  .print\:shadow-none { box-shadow: none !important; }
+  .print\:p-8 { padding: 2rem !important; }
+  .print\:mt-0 { margin-top: 0 !important; }
+}
